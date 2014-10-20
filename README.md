@@ -12,9 +12,10 @@ What is httpbin?
 
 
 AUTHOR
+------
 
 A [Kenneth Reitz](http://www.kennethreitz.org/) Project.
 
 SEE ALSO
-
+--------
 http://python-requests.org
