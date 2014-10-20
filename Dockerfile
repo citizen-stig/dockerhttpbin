@@ -1,4 +1,8 @@
+#
+# HTTPbin Dockerfile
+#
 FROM ubuntu:14.04
+
 MAINTAINER Nikolay Golub <nikolay.v.golub@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
