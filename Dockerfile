@@ -12,7 +12,8 @@ RUN \
   pip install gunicorn httpbin && \
   echo '#!/bin/bash' > run.sh && \
   echo 'gunicorn --bind=0.0.0.0:8000 httpbin:app' >> run.sh && \
-  chmod +x run.sh
+  chmod +x run.sh && \
+  rm -rf /var/lib/apt/lists/*
   
 EXPOSE 8000
   
