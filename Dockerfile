@@ -11,7 +11,7 @@ RUN \
   apt-get update && apt-get install --no-install-recommends python-pip build-essential python-dev -y && \
   pip install gunicorn httpbin && \
   echo '#!/bin/bash' > run.sh && \
-  echo 'gunicorn --bind=0.0.0.0:8000 httpbin:app' >> run.sh && \
+  echo 'exec gunicorn --bind=0.0.0.0:8000 httpbin:app' >> run.sh && \
   chmod +x run.sh && \
   apt-get remove --purge build-essential python-dev -y && \
   apt-get autoremove -y && \
